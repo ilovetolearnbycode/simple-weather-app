@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Weather App</h2>
+        <form class="center">
+            <div class="form-group">
+                <label for="cityName">City Name</label>
+                <input type="email" class="form-control" id="cityName"  placeholder="Enter city name...">
+            </div>
+            <button type="button"  id="submit"class="btn btn-outline-primary">Submit</button>
+        </form>
+    </div>
+
+
+    <!-- weather modal -->
+<div class="modal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+     
+      <div class="modal-body textContainer">
+        <p class="data">
+            <!-- weather goes here... -->
+            <h2 id="countryName"></h2>
+            <span id="weather">
+            </span>
+            <span id="temp">
+              <span class="celcius"></span>
+            </span>
+            <span id="wind"></span>
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" id="closeModal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="danger">
+  <p>Sorry! Try Again...</p>
+</div>
+    <script src="index.js" async defer></script>
+</body>
+</html>
